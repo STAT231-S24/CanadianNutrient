@@ -1,22 +1,27 @@
 library(tidyverse)
-foo <-  # change this name
-  readr::read_csv("data-raw/pdga-approved-disc-golf-discs_2020-10-04T15-02-04.csv") |>
-  janitor::clean_names() |>
-  mutate(
-    model = iconv(disc_model, "latin1", "ASCII", sub = ""),
-    approved_date = lubridate::mdy(approved_date)
-  ) |>
-  rename(
-    diameter = diameter_cm,
-    flexibility = flexibility_kg,
-    height = height_cm,
-    manufacturer = manufacturer_distributor,
-    rim_depth = rim_depth_cm,
-    rim_thickness = rim_thickness_cm,
-    weight = max_weight_gr
-  ) %>%
-  select(
-    approved_date, class, diameter, flexibility, height,
-    manufacturer, model, rim_depth, rim_thickness, weight
-  )
-usethis::use_data(foo)  # change this name
+
+# NJH stubbed out the first two
+# JGB should start working on the remaining 10
+
+ConversionFactor <-  
+  readr::read_csv("data-raw/CONVERSION_FACTOR.csv") |>
+  janitor::clean_names() 
+usethis::use_data(ConversionFactor) 
+
+FoodGroup <-  
+  readr::read_csv("data-raw/FOOD_GROUP.csv") |>
+  janitor::clean_names() 
+usethis::use_data(FoodGroup)  
+
+# CONVERSION_FACTOR.csv
+# FOOD_GROUP.csv
+# FOOD_NAME.csv
+# FOOD_SOURCE.csv
+# MEASURE_NAME.csv
+# NUTRIENT_AMOUNT.csv
+# NUTRIENT_NAME.csv
+# NUTRIENT_SOURCE.csv
+# REFUSE_AMOUNT.csv
+# REFUSE_NAME.csv
+# YIELD_AMOUNT.csv
+# YIELD_NAME.csv

@@ -1,12 +1,12 @@
-# XX DATA PACKAGE
-YOUR NAME
+# Canadian Nutrient DATA PACKAGE
+Javier Gutierrez Bach
 2024-01-01
 
-This file describes the XX package.
+This file describes the Canadian Nutrient package.
 
-The package is interesting because XX, YY, and ZZ.
+The package is interesting because it provides in depth insight on the .
 
-The XX package can be installed by running:
+The Canadian Nutrient package can be installed by running:
 
     devtools::install_github("nicholasjhorton/DiscGolf")
     library(DiscGolf)

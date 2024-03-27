@@ -1,9 +1,28 @@
 Package: CanadianNutrient
-Title: XX EDIT ME
+Title: Canadian Nutrient File
 Version: 0.3
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    c(
+    person("Health Canada", "Canadian Nutrient File, 
+    Nutrition Research Division, Food Directoriate, 
+    Health Products and Food Branch",  role = c("fnd", "cre")),
+    person("Josephine", "Deeks", role = "aut"),
+    person("Marie-France", "Verreault", role = "aut"),
+    person("Rita", "Klutka", role = "aut"),
+    person("Winnie", "Cheung", role = "aut")
+    )
+    
+Description: The package is a compilation of canadian food composition data. 
+Information is derived from the comprehensive United States Department of Agriculture, 
+excluding those foods not available in the canadian market. The relational database 
+includes information on the foods available, the nutrients they have and their 
+amounts, how much of the food is useful (yield) and how much is waste (refuse) 
+including details on what these yields or refuses correspond to (fat, bone, etc.), 
+and mainly what food group these foods are part of. Info on where each record of 
+data came from is also provided, as well as conversion factors to use to find 
+nutrient amounts for common household portion weights for the foods. All 
+measurements use the metric system. 
+
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

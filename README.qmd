@@ -11,22 +11,22 @@ editor: source
 #| label: setup
 #| include: false
 library(tidyverse)
-library(DiscGolf)
+library(CanadianNutrient)
 ```
 
 This file describes the XX package.
 
 The package is interesting because XX, YY, and ZZ.
 
-The XX package can be installed by running:
+The `CanadianNutrient` package can be installed by running:
 
 ```
-devtools::install_github("nicholasjhorton/DiscGolf")
-library(DiscGolf)
+devtools::install_github("nicholasjhorton/CanadianNutrient")
+library(CanadianNutrient)
 ```
 
 ```{r}
-glimpse(DiscGolf)
+glimpse(CanadianNutrient)
 ```
 
 Here are some sample analyses:

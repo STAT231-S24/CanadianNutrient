@@ -26,7 +26,7 @@ library(CanadianNutrient)
 ```
 
 ```{r}
-glimpse(CanadianNutrient)
+glimpse(FoodGroup)
 ```
 
 Here are some sample analyses:

@@ -1,11 +1,11 @@
-XX DATA PACKAGE
+Canadian Nutrient DATA PACKAGE
 ================
-YOUR NAME
+Javier Gutierrez Bach
 2024-01-01
 
-This file describes the XX package.
+This file describes the Canadian Nutrient package.
 
-The package is interesting because XX, YY, and ZZ.
+The package is interesting because it provides detailed explanations on a lot of the foods available in the canadian market. It lets you verify exactly what portion of the food is each yield and refuse, as well as telling you detailed information on every nutrient it has and how to make scale conversions or calculations to determine how much of each nutrient your particular meal might have. It additionally holds information from the foods and nutrients come from (sources) and provides names and descriptions in both english and franch which is useful for the people in French Canada.
 
 The `CanadianNutrient` package can be installed by running:
 
@@ -25,8 +25,12 @@ glimpse(FoodGroup)
 
 Here are some sample analyses:
 
-XX
+You could wrangle the data and join tables to answer questions such as the following:
 
-YY
+Which foods with at least 20g of protein have the least percentage of the portion to be refuse (waste)?
 
-ZZ
+You could use the data set to filter the foods by the ingredients of your lunch today, and sum up the calories of all the ingredients to verify the calorie count of your meal.
+
+Another example is grouping all the foods by their food group, and taking the average of trans fat that a food in that group might have, tyo get an idea of the groups with the most or least fat.
+
+Wrangle away!

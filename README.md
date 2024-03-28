@@ -11,7 +11,7 @@ telling you detailed information on every nutrient it has and how to
 make scale conversions or calculations to determine how much of each
 nutrient your particular meal might have. It additionally holds
 information from the foods and nutrients come from (sources) and
-provides names and descriptions in both english and franch which is
+provides names and descriptions in both English and French which is
 useful for the people in French Canada.
 
 The `CanadianNutrient` package can be installed by running:

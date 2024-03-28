@@ -1,6 +1,6 @@
 Package: CanadianNutrient
 Title: Canadian Nutrient File
-Version: 0.5
+Version: 1.0
 Authors@R: 
     c(
     person("Health Canada", "Canadian Nutrient File, 

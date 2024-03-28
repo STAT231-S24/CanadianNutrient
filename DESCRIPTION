@@ -10,7 +10,8 @@ Authors@R:
     person("Marie-France", "Verreault", role = "aut"),
     person("Rita", "Klutka", role = "aut"),
     person("Winnie", "Cheung", role = "aut"),
-    person("XX", "YY", email = "foo@bar.com", role = c("aut", "cre"))
+    person("Javier", "Gutierrez Bach", email = "jgutierrezbach26@amherst.edu", 
+    role = c("aut", "cre"))
     )
 Description: The package is a compilation of Canadian food composition data. 
    Information is derived from the comprehensive United States Department of Agriculture, 

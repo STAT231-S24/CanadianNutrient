@@ -4,7 +4,7 @@
 #' table (among others) to identify which nutrients and amounts are recorded 
 #' for that food.
 #'
-#' @format ## `NutrientAmount`
+#' @format ## `NutrientAmounts`
 #' A data frame with 524,675 rows and 7 columns:
 #' \describe{
 #'   \item{food_id}{Foreign key from FOOD_NAME used to link to many tables in the database}
@@ -20,7 +20,7 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"NutrientAmount"
+"NutrientAmounts"
 
 #' Conversion Factors
 #'
@@ -51,7 +51,7 @@
 #' database. It contains a description of each food in English and French as 
 #' well as dates and comments.
 #'
-#' @format ## `FoodName`
+#' @format ## `FoodNames`
 #' A data frame with 5691 rows and 10 columns:
 #' \describe{
 #'   \item{food_id}{Primary key that is used to link the foods in other tables 
@@ -67,7 +67,7 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"FoodName"
+"FoodNames"
 
 #' Food Groups
 #'
@@ -94,7 +94,7 @@
 #' This is a principal data frame. This table contains the percent of refuse, or 
 #' inedible portion, for each food.
 #'
-#' @format ## `RefuseAmount`
+#' @format ## `RefuseAmounts`
 #' A data frame with 6898 rows and 4 columns:
 #' \describe{
 #'   \item{food_id}{The foreign key from FOOD_NAME that is used to determine what 
@@ -106,7 +106,7 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"RefuseAmount"
+"RefuseAmounts"
 
 #' Yield Amounts
 #'
@@ -114,7 +114,7 @@
 #' cooking losses assigned to certain foods. These yields are most often used 
 #' for food inventory purposes.
 #'
-#' @format ## `YieldAmount`
+#' @format ## `YieldAmounts`
 #' A data frame with 1427 rows and 4 columns:
 #' \describe{
 #'   \item{food_id}{The foreign key from FOOD_NAME that is used to determine what 
@@ -126,7 +126,7 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"YieldAmount"
+"YieldAmounts"
 
 #' Food Sources
 #'
@@ -134,7 +134,7 @@
 #' table. It contains a list of several food sources (in English and French) 
 #' that foods can be grouped on.
 #'
-#' @format ## `FoodSource`
+#' @format ## `FoodSources`
 #' A data frame with 17 rows and 4 columns:
 #' \describe{
 #'   \item{food_source_id}{Primary key id used to link foods in other tables with 
@@ -146,14 +146,14 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"FoodSource"
+"FoodSources"
 
 #' Nutrient Names
 #'
 #' This data frame is a support or "list" table that contains the list of nutrients 
 #' (in English and French) used in the NUTRIENT_AMOUNT table, with which it is linked.
 #'
-#' @format ## `NutrientName`
+#' @format ## `NutrientNames`
 #' A data frame with 153 rows and 8 columns:
 #' \describe{
 #'   \item{nutrient_id}{Primary key id used to link foods in other tables with 
@@ -173,7 +173,7 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"NutrientName"
+"NutrientNames"
 
 #' Nutrient Sources
 #'
@@ -181,7 +181,7 @@
 #' table It contains a list of several sources and/or types of nutrient data 
 #' (in English and French).
 #'
-#' @format ## `NutrientSource`
+#' @format ## `NutrientSources`
 #' A data frame with 21 rows and 4 columns:
 #' \describe{
 #'   \item{nutrient_source_id}{Primary key id used to link nutrients in other 
@@ -192,14 +192,14 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"NutrientSource"
+"NutrientSources"
 
 #' Measure Names
 #'
 #' This data frame is a support or "list" table that is used to link to the 
 #' CONVERSION_FACTOR table. It contains a list of measures (in English and French).
 #'
-#' @format ## `MeasureName`
+#' @format ## `MeasureNames`
 #' A data frame with 1163 rows and 3 columns:
 #' \describe{
 #'   \item{measure_id}{Primary key id used to link foods to measures when using 
@@ -209,14 +209,14 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"MeasureName"
+"MeasureNames"
 
 #' Refuse Names
 #'
 #' This file is a support or "list" table that is used to link to the REFUSE_AMOUNT 
 #' table. It contains a list of refuse types.
 #'
-#' @format ## `RefuseName`
+#' @format ## `RefuseNames`
 #' A data frame with 151 rows and 3 columns:
 #' \describe{
 #'   \item{refuse_id}{Primary key used to link foods to their corresponding 
@@ -226,14 +226,14 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"RefuseName"
+"RefuseNames"
 
 #' Yield Names
 #'
 #' This data frame is a support or "list" table that is used to link to the YIELD_AMOUNT 
 #' table. It contains a list of yield types or yield descriptions (in English and French).
 #'
-#' @format ## `YieldName`
+#' @format ## `YieldNames`
 #' A data frame with 80 rows and 3 columns:
 #' \describe{
 #'   \item{yield_id}{Primary key used to link foods to their corresponding 
@@ -243,5 +243,5 @@
 #'   ...
 #' }
 #' @source <https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-2015-download-files.html>
-"YieldName"
+"YieldNames"
 

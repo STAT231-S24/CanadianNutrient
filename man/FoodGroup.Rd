@@ -7,12 +7,14 @@
 \format{
 \subsection{\code{FoodGroup}}{
 
-A data frame with XX rows and XX columns:
+A data frame with 24 rows and 4 columns:
 \describe{
-\item{food_group_id}{XX}
-\item{food_group_code}{XX}
-\item{food_group_name}{XX}
-\item{food_group_name_f}{XX}
+\item{food_group_id}{The id (primary key) used to link food groups to the
+Food_Name data frame}
+\item{food_group_code}{Identifier code for the Canadian Nutrient File food
+groups. There are 23 different CNF food groups}
+\item{food_group_name}{Food group name in English}
+\item{food_group_name_f}{Food group name in French}
 ...
 }
 }
@@ -24,7 +26,8 @@ A data frame with XX rows and XX columns:
 FoodGroup
 }
 \description{
-XX This is more descriptive text about my data.
-Even more info is provided here ...
+This data frame is a support or "list" table that is used to link to the FOOD NAME
+table. It contains a list of 23 different group headings (in English and
+French) based on similar characteristics of the foods.
 }
 \keyword{datasets}

@@ -7,12 +7,16 @@
 \format{
 \subsection{\code{ConversionFactor}}{
 
-A data frame with XX rows and XX columns:
+A data frame with 19506 rows and 4 columns:
 \describe{
-\item{food_id}{XX}
-\item{measure_id}{XX}
-\item{conversion_factor_value}{XX}
-\item{conv_factor_date_of_entry}{XX}
+\item{food_id}{The foreign key from FOOD_NAME that is used to join this
+food type with the other related tables to get more information}
+\item{measure_id}{Then id to be joined with 'MEASURE_NAME' data frame to get
+information on how the food is being measured and with what quantities}
+\item{conversion_factor_value}{The factor by which one would multiply the
+nutrient per 100g to obtain nutrient amounts per the measure described
+(the weight of that food in the measure table divided by 100)}
+\item{conv_factor_date_of_entry}{Date the data was entered into the database}
 ...
 }
 }
@@ -24,7 +28,9 @@ A data frame with XX rows and XX columns:
 ConversionFactor
 }
 \description{
-XX This is more descriptive text about my data.
-Even more info is provided here ...
+This is a principal data frame. This table contains portion size conversion factors.
+The conversion factors are food specific multipliers by which the nutrient
+values for each food may be multiplied to give the nutrients in described
+portions.
 }
 \keyword{datasets}

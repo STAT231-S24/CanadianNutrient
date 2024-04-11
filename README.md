@@ -1,6 +1,6 @@
 # Canadian Nutrient DATA PACKAGE
 Javier Gutierrez Bach
-2024-01-01
+2024-04-11
 
 This file describes the Canadian Nutrient package.
 
@@ -16,7 +16,7 @@ useful for the people in French Canada.
 
 The `CanadianNutrient` package can be installed by running:
 
-    devtools::install_github("nicholasjhorton/CanadianNutrient")
+    devtools::install_github("STAT231-S24/CanadianNutrient")
     library(CanadianNutrient)
 
 ``` r

@@ -5,7 +5,7 @@ Javier Gutierrez Bach
 This file describes the Canadian Nutrient package.
 
 The package is interesting because it provides detailed explanations on
-a lot of the foods available in the canadian market. It lets you verify
+a lot of the foods available in the Canadian market. It lets you verify
 exactly what portion of the food is each yield and refuse, as well as
 telling you detailed information on every nutrient it has and how to
 make scale conversions or calculations to determine how much of each
@@ -24,11 +24,10 @@ glimpse(FoodGroup)
 ```
 
     Rows: 23
-    Columns: 4
-    $ food_group_id     <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
-    $ food_group_code   <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
-    $ food_group_name   <chr> "Dairy and Egg Products", "Spices and Herbs", "Babyf…
-    $ food_group_name_f <chr> "Produits laitiers et d'oeufs\n", "\xc9pices et fine…
+    Columns: 3
+    $ food_group_id   <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
+    $ food_group_code <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
+    $ food_group_name <chr> "Dairy and Egg Products", "Spices and Herbs", "Babyfoo…
 
 Here are some sample analyses:
 

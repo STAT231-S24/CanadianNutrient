@@ -20,22 +20,36 @@ The `CanadianNutrient` package can be installed by running:
     devtools::install_github("STAT231-S24/CanadianNutrient")
     library(CanadianNutrient)
 
+    Data sets in package ‘CanadianNutrient’:
+
+    ConversionFactor             Conversion Factors
+    FoodGroup                    Food Groups
+    FoodNames                    Food Names
+    FoodSources                  Food Sources
+    MeasureNames                 Measure Names
+    NutrientAmounts              Nutrient Amounts
+    NutrientNames                Nutrient Names
+    NutrientSources              Nutrient Sources
+    RefuseAmounts                Refuse Amounts
+    RefuseNames                  Refuse Names
+    YieldAmounts                 Yield Amounts
+    YieldNames                   Yield Names
+
 ``` r
 packageVersion("CanadianNutrient")
 ```
 
-    [1] '1.0'
+    [1] '1.4'
 
 ``` r
 glimpse(FoodGroup)
 ```
 
     Rows: 23
-    Columns: 4
-    $ food_group_id     <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
-    $ food_group_code   <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
-    $ food_group_name   <chr> "Dairy and Egg Products", "Spices and Herbs", "Babyf…
-    $ food_group_name_f <chr> "Produits laitiers et d'oeufs\n", "\xc9pices et fine…
+    Columns: 3
+    $ food_group_id   <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
+    $ food_group_code <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
+    $ food_group_name <chr> "Dairy and Egg Products", "Spices and Herbs", "Babyfoo…
 
 Here are some sample analyses:
 

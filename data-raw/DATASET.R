@@ -3,6 +3,12 @@ library(tidyverse)
 # NJH stubbed out the first two
 # JGB should start working on the remaining 10
 
+clean_text <- function(string){
+  string <- string |>
+    str_replace_all("�", "")
+  return(string)
+}
+  
 ConversionFactor <-  
   readr::read_csv("data-raw/CONVERSION_FACTOR.csv") |>
   janitor::clean_names() 
@@ -10,23 +16,28 @@ usethis::use_data(ConversionFactor, overwrite = TRUE)
 
 FoodGroup <-  
   readr::read_csv("data-raw/FOOD_GROUP.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(FoodGroup, overwrite = TRUE)  
 
 FoodNames <-  
   readr::read_csv("data-raw/FOOD_NAME.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
+
 usethis::use_data(FoodNames, overwrite = TRUE)  
 
 
 FoodSources <-  
   readr::read_csv("data-raw/FOOD_SOURCE.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(FoodSources, overwrite = TRUE)  
 
 MeasureNames <-  
   readr::read_csv("data-raw/MEASURE_NAME.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(MeasureNames, overwrite = TRUE)  
 
 NutrientAmounts <-  
@@ -36,12 +47,14 @@ usethis::use_data(NutrientAmounts, overwrite = TRUE)
 
 NutrientNames <-  
   readr::read_csv("data-raw/NUTRIENT_NAME.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(NutrientNames, overwrite = TRUE) 
 
 NutrientSources <-  
   readr::read_csv("data-raw/NUTRIENT_SOURCE.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(NutrientSources, overwrite = TRUE) 
 
 RefuseAmounts <-  
@@ -51,7 +64,8 @@ usethis::use_data(RefuseAmounts, overwrite = TRUE)
 
 RefuseNames <-  
   readr::read_csv("data-raw/REFUSE_NAME.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(RefuseNames, overwrite = TRUE) 
 
 YieldAmounts <-  
@@ -61,7 +75,8 @@ usethis::use_data(YieldAmounts, overwrite = TRUE)
 
 YieldNames <-  
   readr::read_csv("data-raw/YIELD_NAME.csv") |>
-  janitor::clean_names() 
+  janitor::clean_names() |> 
+  mutate(across(where(is.character), clean_text))
 usethis::use_data(YieldNames, overwrite = TRUE) 
 
 # CONVERSION_FACTOR.csv

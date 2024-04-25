@@ -1,6 +1,7 @@
-# Canadian Nutrient DATA PACKAGE
+Canadian Nutrient DATA PACKAGE
+================
 Javier Gutierrez Bach
-2024-04-11
+2024-04-24
 
 This file describes the Canadian Nutrient package.
 
@@ -18,6 +19,27 @@ The `CanadianNutrient` package can be installed by running:
 
     devtools::install_github("STAT231-S24/CanadianNutrient")
     library(CanadianNutrient)
+
+    Data sets in package ‘CanadianNutrient’:
+
+    ConversionFactor             Conversion Factors
+    FoodGroup                    Food Groups
+    FoodNames                    Food Names
+    FoodSources                  Food Sources
+    MeasureNames                 Measure Names
+    NutrientAmounts              Nutrient Amounts
+    NutrientNames                Nutrient Names
+    NutrientSources              Nutrient Sources
+    RefuseAmounts                Refuse Amounts
+    RefuseNames                  Refuse Names
+    YieldAmounts                 Yield Amounts
+    YieldNames                   Yield Names
+
+``` r
+packageVersion("CanadianNutrient")
+```
+
+    [1] '1.4'
 
 ``` r
 glimpse(FoodGroup)

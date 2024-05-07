@@ -1,7 +1,7 @@
 Package: CanadianNutrient
 Date: 2024-04-24
 Title: Canadian Nutrient File
-Version: 1.5
+Version: 1.6
 Authors@R: 
     c(
     person("Health Canada", "Canadian Nutrient File, 

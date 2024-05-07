@@ -1,5 +1,4 @@
-Canadian Nutrient DATA PACKAGE
-================
+# Canadian Nutrient DATA PACKAGE
 Javier Gutierrez Bach
 2024-04-24
 
@@ -39,17 +38,18 @@ The `CanadianNutrient` package can be installed by running:
 packageVersion("CanadianNutrient")
 ```
 
-    [1] '1.4'
+    [1] '1.5'
 
 ``` r
 glimpse(FoodGroup)
 ```
 
     Rows: 23
-    Columns: 3
-    $ food_group_id   <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
-    $ food_group_code <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
-    $ food_group_name <chr> "Dairy and Egg Products", "Spices and Herbs", "Babyfoo…
+    Columns: 4
+    $ food_group_id     <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
+    $ food_group_code   <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
+    $ food_group_name   <chr> "Dairy and Egg Products", "Spices and Herbs", "Babyf…
+    $ food_group_name_f <chr> "Produits laitiers et d'oeufs\n", "pices et fines he…
 
 Here are some sample analyses:
 
